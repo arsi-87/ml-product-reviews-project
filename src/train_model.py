@@ -38,7 +38,7 @@ preprocessor = ColumnTransformer(
 
 pipeline = Pipeline([
       ("preprocessing", preprocessor),
-      ("classifier", LinearSVC)
+      ("classifier", LinearSVC())
 ]) 
 
 # Train model on the entire dataset
